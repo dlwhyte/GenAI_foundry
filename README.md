@@ -5,8 +5,11 @@
 ## 📥 How to Use
 
 ✅ Clone or download this repo.  
+
 ✅ Open the Notebooks in **Google Colab** (or locally if you prefer). 
+
 ✅ [Learn about using Google Colab →](docs/collab_notes.md)
+
 ✅ Follow along with the tutorials and examples.
 
 ---
