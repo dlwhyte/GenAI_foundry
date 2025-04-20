@@ -8,9 +8,9 @@
 
 ✅ Open the Notebooks in **Google Colab** (or locally if you prefer). 
 
-✅ [Learn about using Google Colab →](docs/collab_notes.md)
+📖 [Learn about using Google Colab →](docs/collab_notes.md)
 
-✅ Follow along with the tutorials and examples.
+📚 Follow along with the tutorials and examples.
 
 ---
 
