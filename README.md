@@ -1,6 +1,9 @@
-# GenAI_foundry
+<h1 align="center">
+  GenAI_foundry
+  <br>
+  <img src="images/genai.png" alt="GenAI Badge" width="200">
+</h1>
 
----
 
 ## 📥 How to Use
 
