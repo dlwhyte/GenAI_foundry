@@ -8,7 +8,13 @@
 
 ✅ Open the Notebooks in **Google Colab** (or locally if you prefer). 
 
-📖 [Learn about using Google Colab →](docs/collab_notes.md)
+> 📖 [Learn about using Google Colab →](docs/collab_notes.md)
+
+✅ Create an OpenAI API key **OpenAI**.
+
+> 📚 [OpenAI API key →](docs/openai.md)
+
+
 
 📚 Follow along with the tutorials and examples.
 
@@ -16,7 +22,7 @@
 
 ## 📢 About
 
-This repo was created for educational purposes — whether you're a student, professional, or AI enthusiast.  
+This repo was created for educational purposes to alllow an introduction into the world of Generative AI.  
 The goal is to make learning **simple**, **hands-on**, and **fun**!
 
 Feel free to fork, adapt, and expand upon these examples. 🚀
