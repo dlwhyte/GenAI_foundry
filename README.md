@@ -28,6 +28,10 @@ The goal is to make learning **simple**, **hands-on**, and **fun**!
 Feel free to fork, adapt, and expand upon these examples. 🚀
 
 [![Powered by OpenAI](https://img.shields.io/badge/Powered_by-OpenAI-blue?logo=openai)](https://openai.com/)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/your-repo/blob/main/your_notebook.ipynb)
+![Project Alpha](images/project_alpha_badge.png)
+![Model](https://img.shields.io/badge/model-OpenAI%20GPT--4-blue)
 ---
 
 ## 📝 License
