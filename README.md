@@ -34,7 +34,7 @@ Feel free to fork, adapt, and expand upon these examples. 🚀
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/your-repo/blob/main/your_notebook.ipynb)
 ![Project Alpha](images/project_alpha_badge.png)
-![Model](https://img.shields.io/badge/model-OpenAI%20GPT--4-blue)
+![Model](https://img.shields.io/badge/model-OpenAI%20GPT--4o--mini-blue)
 ---
 
 ## 📝 License
