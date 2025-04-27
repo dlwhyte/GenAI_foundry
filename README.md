@@ -27,6 +27,7 @@ The goal is to make learning **simple**, **hands-on**, and **fun**!
 
 Feel free to fork, adapt, and expand upon these examples. 🚀
 
+[![Powered by OpenAI](https://img.shields.io/badge/Powered_by-OpenAI-blue?logo=openai)](https://openai.com/)
 ---
 
 ## 📝 License
