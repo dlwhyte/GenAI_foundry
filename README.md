@@ -12,7 +12,7 @@
 
 ✅ Create an OpenAI API key **OpenAI**.
 
-> 📚 [OpenAI API key →](docs/openai.md)
+> 🛠 [OpenAI API key →](docs/openai.md)
 
 
 
