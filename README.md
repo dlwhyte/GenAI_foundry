@@ -13,6 +13,7 @@
 
 ✅ Create an OpenAI API key **OpenAI**.
 
+A step-by-step guide to obtain a key can be found here.
 > 🛠 [OpenAI API key →](docs/openai.md)
 
 
