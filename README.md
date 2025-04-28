@@ -7,18 +7,19 @@
 
 # 📚 Tutorials and Notebooks
 
-Welcome to the GenAI Foundry learning series!  
-Below you’ll find a list of hands-on tutorials designed to help you learn about Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and more.
+Welcome to the GenAI Foundry learning series!   Below you’ll find a list of hands-on tutorials designed to help you learn about Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and more.
 
 ---
 
-| 📓 Notebook | 🧠 Description | 🚀 Open in Colab |
+| 📓 Notebook | 📝 Description | 🚀 Open in Colab |
 |:-----------|:---------------|:----------------|
 | [Getting Started with Google Colab](notebooks/getting_started_colab.ipynb) | Introduction to using Colab for GenAI projects. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/GenAI_foundry/blob/main/notebooks/getting_started_colab.ipynb) |
 | [Simple Chatbot](notebooks/simple_chatbot.ipynb) | Chatbot using an API key. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1k5VtEDxf7fYaeV_-fVezyJMaTvPi8P_q?usp=drive_link) |
-| [RAG Pipeline Example](notebooks/rag_pipeline_example.ipynb) | Building a retrieval-augmented generation pipeline from scratch. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/GenAI_foundry/blob/main/notebooks/rag_pipeline_example.ipynb) |
+| [Temperature and Token Explorer](notebooks/OpenAI_Temperature_Token.ipynb) | Building a retrieval-augmented generation pipeline from scratch. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nf4tB7OiVDmhc8Ubcjm5D0-TvzBR03M9) |
 | [Fine-Tuning Basics](notebooks/fine_tuning_basics.ipynb) | (Coming Soon) Intro to fine-tuning foundation models. | 🚧 Coming Soon |
 📚 Follow along with the tutorials and examples.
+
+---
 
 ---
 
