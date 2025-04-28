@@ -53,13 +53,6 @@ Colab makes it simple to explore and experiment with machine learning, data scie
 
 ---
 
-## 📢 Related Tutorials
-
-- [Introduction to LLMs](../notebooks/introduction_to_llms.ipynb)
-- [Using OpenAI APIs Securely](../notebooks/openai_secure_usage.ipynb)
-
----
-
 # 🎯 Ready to Start?
 
 Explore the tutorials and launch your GenAI experiments with **Google Colab** today! 🚀
