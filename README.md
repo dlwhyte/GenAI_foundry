@@ -1,5 +1,5 @@
 <h1 align="center">
-  GenAI_foundry
+  GenAI Foundry
   <br>
   <img src="images/genai.png" alt="GenAI Badge" width="100">
 
