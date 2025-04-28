@@ -50,6 +50,26 @@ A step-by-step guide to obtain a key can be found here.
     <img src="https://img.shields.io/badge/Create_OpenAI-API_Key-5A3EBA?style=for-the-badge&logo=openai&logoColor=white" alt="Create OpenAI Key">
   </a>
 </p>
+
+
+
+<a href="https://github.com/dlwhyte/GenAI_foundry">
+  <img src="https://img.shields.io/badge/Clone_or_Download-Repo-6A5ACD?style=for-the-badge&logo=github&logoColor=white" alt="Clone or Download">
+</a>
+
+<br>
+
+<a href="https://colab.research.google.com/github/dlwhyte/GenAI_foundry">
+  <img src="https://img.shields.io/badge/Open_in-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab">
+</a>
+
+<br>
+
+<a href="https://platform.openai.com/signup">
+  <img src="https://img.shields.io/badge/Create_OpenAI-API_Key-5A3EBA?style=for-the-badge&logo=openai&logoColor=white" alt="Create OpenAI Key">
+</a>
+
+
 ---
 
 ## 📢 About GenAI Foundry
