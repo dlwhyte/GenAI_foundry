@@ -47,4 +47,4 @@ This project is licensed under the **MIT License** — free to use, modify, and 
 See the [LICENSE](LICENSE) file for more details.
 
 ---
-
+[![Contact Me](https://img.shields.io/badge/Contact_Me-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dlwhyte/)
