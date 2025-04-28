@@ -41,6 +41,8 @@ A step-by-step guide to obtain a key can be found here.
   <a href="https://github.com/dlwhyte/GenAI_foundry">
     <img src="https://img.shields.io/badge/Clone_or_Download-Repo-6A5ACD?style=for-the-badge&logo=github&logoColor=white" alt="Clone or Download">
   </a>
+      Clone or download this repo.  
+
   &nbsp;
   <a href="https://colab.research.google.com/github/dlwhyte/GenAI_foundry">
     <img src="https://img.shields.io/badge/Open_in-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab">
