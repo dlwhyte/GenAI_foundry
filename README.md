@@ -27,7 +27,7 @@ Below you’ll find a list of hands-on tutorials designed to help you learn abou
 | 📓 Notebook | 🧠 Description | 🚀 Open in Colab |
 |:-----------|:---------------|:----------------|
 | [Getting Started with Google Colab](notebooks/getting_started_colab.ipynb) | Introduction to using Colab for GenAI projects. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/GenAI_foundry/blob/main/notebooks/getting_started_colab.ipynb) |
-| [Introduction to LLMs](notebooks/introduction_to_llms.ipynb) | Basics of large language models and prompt engineering. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/GenAI_foundry/blob/main/notebooks/introduction_to_llms.ipynb) |
+| [Simple Chatbot](notebooks/simple_chatbot.ipynb) | Chatbot using an API key. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1k5VtEDxf7fYaeV_-fVezyJMaTvPi8P_q?usp=drive_link) |
 | [RAG Pipeline Example](notebooks/rag_pipeline_example.ipynb) | Building a retrieval-augmented generation pipeline from scratch. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/GenAI_foundry/blob/main/notebooks/rag_pipeline_example.ipynb) |
 | [Fine-Tuning Basics](notebooks/fine_tuning_basics.ipynb) | (Coming Soon) Intro to fine-tuning foundation models. | 🚧 Coming Soon |
 📚 Follow along with the tutorials and examples.
