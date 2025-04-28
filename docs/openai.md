@@ -29,19 +29,24 @@
  - Select from the drop down what "best describes you"
 
 <img src="../images/openai-orgname2.png" alt="Pop PNG"
-     style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;">   
-
-<img src="../images/openai-apikey.png" alt="Pop PNG"
-     style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;">
+     style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;"> 
      
 <img src="../images/openai-invite.png" alt="Pop PNG"
      style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;">
-
-<img src="../images/openai-dashboard.png" alt="Pop PNG"
+     
+<img src="../images/openai-apikey.png" alt="Pop PNG"
      style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;">
+
+<img src="../images/API-key.png" alt="Pop PNG"
+     style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;">  
 
 <img src="../images/openai-credits.png" alt="Pop PNG"
      style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;">
-
+     
 <img src="../images/openai-platform.png" alt="Pop PNG"
-     style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;">    
+     style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;">  
+     
+<img src="../images/openai-dashboard.png" alt="Pop PNG"
+     style="border: 6px solid #3498db; background: white; width: 450px; border-radius: 10px;">
+
+  
