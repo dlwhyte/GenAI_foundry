@@ -1,15 +1,4 @@
-# GenAI Foundry
-
-> A collection of examples and tutorials for learning about LLMs and GenAI.
-
----
-
-## 📚 Tutorials
-
-- [🚀 Introduction to Google Colab](./docs/colab_notes.md)
-- [🔗 Official Google Colab Overview](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
-
-- # 🚀 Introduction to Google Colab
+# 🚀 Introduction to Google Colab
 
 Welcome to the **Google Colab** companion guide for the **GenAI Foundry** project!
 
@@ -25,7 +14,7 @@ Google Colab is a powerful, free platform that allows you to run Python code dir
 - Great for quick experiments, tutorials, and AI development.
 
 Colab makes it simple to explore and experiment with machine learning, data science, and generative AI without setting up a local environment.
-
+- [🔗 Official Google Colab Overview](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
 ---
 
 ## 🔥 Why We Use Google Colab in GenAI Foundry
