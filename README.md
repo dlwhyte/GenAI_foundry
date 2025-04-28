@@ -21,7 +21,7 @@ Welcome to the GenAI Foundry learning series!   Below you’ll find a list of ha
 ---
 ## Inroductory Concepts
 
-| 📓 Notebook | 📝 Description | 🚀 Open in Colab |
+| 📓 Notebook | 📝 Description | 🚀 Colab Link |
 |:-----------|:---------------|:----------------|
 | [Simple Chatbot](notebooks/simple_chatbot.ipynb) | Chatbot using an API key. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1k5VtEDxf7fYaeV_-fVezyJMaTvPi8P_q?usp=drive_link) |
 | [Temperature and Token Explorer](notebooks/temperature_token.ipynb) | Explore how temperature and tokens affects LLM output. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nf4tB7OiVDmhc8Ubcjm5D0-TvzBR03M9) |
