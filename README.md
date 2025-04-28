@@ -3,18 +3,6 @@
   <br>
   <img src="images/genai.png" alt="GenAI Badge" width="100">
 
-## 📥 How to Use
-
-✅ Clone or download this repo.  
-
-✅ Open the Notebooks in **Google Colab** (or locally if you prefer). 
-
-> 📖 [Learn about using Google Colab →](docs/collab_notes.md)
-
-✅ Create an OpenAI API key **OpenAI**.
-
-A step-by-step guide to obtain a key can be found here.
-> 🛠 [OpenAI API key →](docs/openai.md)
 
 
 # 📚 Tutorials and Notebooks
@@ -33,6 +21,22 @@ Below you’ll find a list of hands-on tutorials designed to help you learn abou
 📚 Follow along with the tutorials and examples.
 
 ---
+
+## 📥 How to Use
+
+✅ Clone or download this repo.  
+
+✅ Open the Notebooks in **Google Colab** (or locally if you prefer). 
+
+> 📖 [Learn about using Google Colab →](docs/collab_notes.md)
+
+✅ Create an OpenAI API key **OpenAI**.
+
+A step-by-step guide to obtain a key can be found here.
+> 🛠 [OpenAI API key →](docs/openai.md)
+
+---
+
 
 ## 📢 About
 
