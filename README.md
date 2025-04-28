@@ -7,7 +7,7 @@
 
 # 📚 Tutorials and Notebooks
 
-Welcome to the GenAI Foundry learning series!   Below you’ll find a list of hands-on tutorials designed to help you learn about Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and more.
+Welcome to the GenAI Foundry learning series!   Below you’ll find a list of hands-on tutorials designed to help you learn about Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and more. [![Powered by OpenAI](https://img.shields.io/badge/Powered_by-OpenAI-blue?logo=openai)](https://openai.com/)
 
 ---
 
@@ -22,7 +22,7 @@ Welcome to the GenAI Foundry learning series!   Below you’ll find a list of ha
 
 ---
 
-# 📥 How to Use
+# 📝 How to Use
 
 ✅ Clone or download this repo.  
 
@@ -35,25 +35,41 @@ Welcome to the GenAI Foundry learning series!   Below you’ll find a list of ha
 A step-by-step guide to obtain a key can be found here.
  🛠 [OpenAI API key →](docs/openai.md)
 
+
+
+ <p align="center">
+  <a href="https://github.com/dlwhyte/GenAI_foundry">
+    <img src="https://img.shields.io/badge/Clone_or_Download-Repo-6A5ACD?style=for-the-badge&logo=github&logoColor=white" alt="Clone or Download">
+  </a>
+  &nbsp;
+  <a href="https://colab.research.google.com/github/dlwhyte/GenAI_foundry">
+    <img src="https://img.shields.io/badge/Open_in-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black" alt="Open in Colab">
+  </a>
+  &nbsp;
+  <a href="https://platform.openai.com/signup">
+    <img src="https://img.shields.io/badge/Create_OpenAI-API_Key-5A3EBA?style=for-the-badge&logo=openai&logoColor=white" alt="Create OpenAI Key">
+  </a>
+</p>
 ---
 
+## 📢 About GenAI Foundry
 
-## 📢 About
+This repository was created to make the world of Generative AI **accessible, simple, and hands-on**.
 
-This repo was created for educational purposes to alllow an introduction into the world of Generative AI.  
-The goal is to make learning **simple**, **hands-on**, and **fun**!
+Our mission:
+- 🚀 Empower learners to experiment with LLMs and RAG pipelines.
+- 🧠 Provide clear, beginner-friendly tutorials.
+- 📚 Foster creativity and exploration with GenAI tools.
 
-Feel free to fork, adapt, and expand upon these examples. 🚀
+Feel free to **fork**, **adapt**, and **expand** these examples! 🎯
 
-[![Powered by OpenAI](https://img.shields.io/badge/Powered_by-OpenAI-blue?logo=openai)](https://openai.com/)
-
-![Model](https://img.shields.io/badge/model-OpenAI%20GPT--4o--mini-blue)
 ---
 
 ## 📝 License
 
-This project is licensed under the MIT License — free to use, modify, and share.
+This project is licensed under the **MIT License** — free to use, modify, and share!
+
+See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-**Happy Learning! 🌟**
