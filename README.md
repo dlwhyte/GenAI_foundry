@@ -27,6 +27,7 @@ Welcome to the GenAI Foundry learning series!   Below you’ll find a list of ha
 | [Temperature and Token Explorer](notebooks/temperature_token.ipynb) | Explore how temperature and tokens affects LLM output. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nf4tB7OiVDmhc8Ubcjm5D0-TvzBR03M9) |
 | [Prompt Engineering Basics](notebooks/prompt_engineering.ipynb) | A gentle introduction to prompt engineering. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jdyIrceJUBdfy5dfP0uw9ticvgh_4nur#scrollTo=Ezt3B02GhU9i) |
 | [Few shot Zero Shot prompting](notebooks/few_shot_zero_shot.ipynb) | A gentle introduction to prompt engineering. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UsKT57QXtnFffcy5IBmtWYlYZAI_hNCc) 
+| [Simple RAG Application](notebooks/simple_rag.ipynb) | A gentle introduction to prompt engineering. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15ylAMZdr8W44pcAOKw2ISOvI5N4gWOt0) 
 | [Fine-Tuning Basics](notebooks/fine_tuning_basics.ipynb) | (Coming Soon) Intro to fine-tuning foundation models. | 🚧 Coming Soon |
 
 ---
