@@ -16,19 +16,28 @@ Feel free to **fork**, **adapt**, and **expand** these examples! 🎯
 
 # 📚 Tutorials and Notebooks
 
-Welcome to the GenAI Foundry learning series!   Below you’ll find a list of hands-on tutorials designed to help you learn about Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and more. [![Powered by OpenAI](https://img.shields.io/badge/Powered_by-OpenAI-blue?logo=openai)](https://openai.com/)
+Welcome to the GenAI Foundry learning series!   Below you’ll find a list of hands-on tutorials designed to help you learn about Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and more. 
 
+
+
+## A Practical Tour of LLM Mechanics (No API Key Required)
+| 📓 Notebook | 📝 Description | 🚀 Colab Link |
+|:-----------|:---------------|:----------------|
+| [1. Tokens and Embeddings](notebooks/tokens_and_embeddings.ipynb) | Introduction to tokens and embeddings. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gspDc-BuFDn4DtIPw6i7O9qWXATm-IqX#scrollTo=5ehx5CZNQPfu) 
+| [2. Semantic Similarity](notebooks/semantic_similarity.ipynb) | Introduction to semantic similarity. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1eQthtiit935_SrhbZC3xrhpCyddm90nv#scrollTo=490e2992) 
+| 3. Search with Embeddings (RAG Foundations) | Embeddings and RAG. | 🚧 Coming Soon |
+| 4. Model and Tradeoffs | Model selection and tradeoffs. | 🚧 Coming Soon |
 ---
-## Inroductory Concepts
+## Inroductory Concepts (OpenAI API Key Required [![Powered by OpenAI](https://img.shields.io/badge/Powered_by-OpenAI-blue?logo=openai)](https://openai.com/))
 
 | 📓 Notebook | 📝 Description | 🚀 Colab Link |
 |:-----------|:---------------|:----------------|
 | [Simple Chatbot](notebooks/simple_chatbot.ipynb) | Chatbot using an API key. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1k5VtEDxf7fYaeV_-fVezyJMaTvPi8P_q?usp=drive_link) |
 | [Temperature and Token Explorer](notebooks/temperature_token.ipynb) | Explore how temperature and tokens affects LLM output. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nf4tB7OiVDmhc8Ubcjm5D0-TvzBR03M9) |
-| [Prompt Engineering Basics](notebooks/prompt_engineering.ipynb) | A gentle introduction to prompt engineering. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jdyIrceJUBdfy5dfP0uw9ticvgh_4nur#scrollTo=Ezt3B02GhU9i) |
-| [Few shot Zero Shot prompting](notebooks/few_shot_zero_shot.ipynb) | A gentle introduction to prompt engineering. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UsKT57QXtnFffcy5IBmtWYlYZAI_hNCc) 
-| [Simple RAG Application](notebooks/simple_rag.ipynb) | A gentle introduction to prompt engineering. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15ylAMZdr8W44pcAOKw2ISOvI5N4gWOt0) 
-| [Fine-Tuning Basics](notebooks/fine_tuning_basics.ipynb) | (Coming Soon) Intro to fine-tuning foundation models. | 🚧 Coming Soon |
+| [Prompt Engineering Basics](notebooks/prompt_engineering.ipynb) | A gentle introduction to prompt engineering basics. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jdyIrceJUBdfy5dfP0uw9ticvgh_4nur#scrollTo=Ezt3B02GhU9i) |
+| [Few Shot / Zero Shot prompting](notebooks/few_shot_zero_shot.ipynb) | Prompt engineering techniques. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UsKT57QXtnFffcy5IBmtWYlYZAI_hNCc) 
+| [Simple RAG Application](notebooks/simple_rag.ipynb) | A gentle introduction to RAG. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15ylAMZdr8W44pcAOKw2ISOvI5N4gWOt0) 
+| Fine-Tuning Basics | Intro to fine-tuning foundation models. | 🚧 Coming Soon |
 
 ---
 
