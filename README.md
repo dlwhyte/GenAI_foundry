@@ -25,7 +25,7 @@ Welcome to the GenAI Foundry learning series!   Below you’ll find a list of ha
 |:-----------|:---------------|:----------------|
 | [1. Tokens and Embeddings](notebooks/tokens_and_embeddings.ipynb) | Introduction to tokens and embeddings. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gspDc-BuFDn4DtIPw6i7O9qWXATm-IqX#scrollTo=5ehx5CZNQPfu) 
 | [2. Semantic Similarity](notebooks/semantic_similarity.ipynb) | Introduction to semantic similarity. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1eQthtiit935_SrhbZC3xrhpCyddm90nv#scrollTo=490e2992) 
-| 3. Search with Embeddings (RAG Foundations) | Embeddings and RAG. | 🚧 Coming Soon |
+| 3. Search with Embeddings (RAG Foundations) | Embeddings and RAG. | *🚧 Coming Soon* |
 | 4. Model and Tradeoffs | Model selection and tradeoffs. | 🚧 Coming Soon |
 ---
 ## Inroductory Concepts (OpenAI API Key Required [![Powered by OpenAI](https://img.shields.io/badge/Powered_by-OpenAI-blue?logo=openai)](https://openai.com/))
