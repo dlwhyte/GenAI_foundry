@@ -37,6 +37,7 @@ Welcome to the GenAI Foundry learning series!   Below you’ll find a list of ha
 | [Prompt Engineering Basics](notebooks/prompt_engineering.ipynb) | A gentle introduction to prompt engineering basics. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jdyIrceJUBdfy5dfP0uw9ticvgh_4nur#scrollTo=Ezt3B02GhU9i) |
 | [Few Shot / Zero Shot prompting](notebooks/few_shot_zero_shot.ipynb) | Prompt engineering techniques. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UsKT57QXtnFffcy5IBmtWYlYZAI_hNCc) 
 | [Simple RAG Application](notebooks/simple_rag.ipynb) | A gentle introduction to RAG. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15ylAMZdr8W44pcAOKw2ISOvI5N4gWOt0) 
+| [LangChain Basics](notebooks/langchain_introduction.ipynb) | A gentle introduction to LangChain capabilities. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sajbwIQmqgFlbQAzbDuHcMZEDDYpL_kQ#scrollTo=R1oJC7t39iTJ) 
 | Fine-Tuning Basics | Intro to fine-tuning foundation models. | 🚧 Coming Soon |
 
 ---
