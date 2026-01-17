@@ -21,14 +21,14 @@ Docker is required to run these demos. Download and install it for your operatin
 
 After installation, **start Docker Desktop** and wait for it to fully load (you'll see the whale icon in your system tray/menu bar).
 
-### Get an OpenAI API Key (Optional)
+👉 **[See detailed instructions: How to Get an OpenAI API Key](OPENAI_API_KEY_GUIDE.md)**
 
-The RAG demo works without an API key. The Ontology demo's AI features require one.
-
+Quick summary:
 1. Go to [platform.openai.com](https://platform.openai.com/)
 2. Sign up or log in
-3. Navigate to API Keys
-4. Create a new key and copy it somewhere safe
+3. Go to API Keys section
+4. Create a new key and copy it
+5. Add $5-10 in credits (more than enough for this course)
 
 ---
 
