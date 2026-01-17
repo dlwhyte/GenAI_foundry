@@ -42,7 +42,7 @@ Welcome to the GenAI Foundry learning series!   Below you’ll find a list of ha
 
 ---
 
- ## 🎓 Applied Generative AI - Interactive Demos
+ # 🎓 Applied Generative AI - Interactive Demos
 
 Interactive demonstrations of RAG (Retrieval-Augmented Generation) and Ontology-based AI reasoning concepts.
 
