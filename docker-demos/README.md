@@ -1,6 +1,6 @@
 # 🎓 Applied Generative AI - Interactive Demos
 
-**MIT Professional Education — Applied Generative AI for Digital Transformation**
+**Applied Generative AI for Digital Transformation**
 
 Interactive demonstrations of RAG (Retrieval-Augmented Generation) and Ontology-based AI reasoning concepts.
 
