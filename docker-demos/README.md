@@ -21,7 +21,7 @@ Docker is required to run these demos. Download and install it for your operatin
 
 After installation, **start Docker Desktop** and wait for it to fully load (you'll see the whale icon in your system tray/menu bar).
 
-👉 **[See detailed instructions: How to Get an OpenAI API Key](OPENAI_API_KEY_GUIDE.md)**
+👉 **[See detailed instructions: How to Get an OpenAI API Key](docs/openai.md)**
 
 Quick summary:
 1. Go to [platform.openai.com](https://platform.openai.com/)
