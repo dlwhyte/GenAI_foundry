@@ -68,6 +68,8 @@ Explore structured knowledge and "what if" analysis:
 
 ### 🐳 Running the Demos (Docker Required)
 
+📖 **[Detailed Setup Instructions](docker-demos/README.md)**
+
 | Step | Command |
 |:-----|:--------|
 | 1. Clone this repo | `git clone https://github.com/dlwhyte/GenAI_foundry.git` |
@@ -76,7 +78,7 @@ Explore structured knowledge and "what if" analysis:
 | 4. Run demos | `docker run -p 8501:8501 mit-genai-demos` |
 | 5. Open browser | [http://localhost:8501](http://localhost:8501) |
 
-📖 **[Detailed Setup Instructions](docker-demos/README.md)** | 🔑 **[How to Get an OpenAI API Key](docs/openai.md)**
+🔑 **[How to Get an OpenAI API Key](docs/openai.md)**
 
 > 💡 **Don't have Docker?** Download it from [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/)
 
