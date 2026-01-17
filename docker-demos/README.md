@@ -204,4 +204,4 @@ If you encounter issues not covered here, please:
 
 ---
 
-*MIT Professional Education — Applied Generative AI for Digital Transformation*
+*Applied Generative AI for Digital Transformation*
