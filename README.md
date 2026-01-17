@@ -87,7 +87,8 @@ Explore structured knowledge and "what if" analysis:
 
 | Action | Description |
 |:------|:------------|
-| [![Clone or Download Repo](https://img.shields.io/badge/Clone_or_Download-Repo-6A5ACD?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dlwhyte/GenAI_foundry) | ✅ Clone or download this repository to your local machine. |
+| [![GitHub Guide](https://img.shields.io/badge/📖_GitHub-Guide-6A5ACD?style=for-the-badge&logo=github&logoColor=white)](docs/GITHUB_GUIDE.md) | ✅ New to GitHub? Start here. |
+| [![Docker Guide](https://img.shields.io/badge/🐳_Docker-Guide-2496ED?style=for-the-badge&logo=docker&logoColor=white)](docs/DOCKER_GUIDE.md) | ✅ Learn how to install and use Docker for running demos. |
 | [![Open in Google Colab](https://img.shields.io/badge/Open_in-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black)](https://colab.research.google.com/github/dlwhyte/GenAI_foundry) | ✅ Open and run the notebooks directly in Google Colab. |
 | [![Create OpenAI API Key](https://img.shields.io/badge/Create_OpenAI-API_Key-5A3EBA?style=for-the-badge&logo=openai&logoColor=white)](docs/openai.md) | ✅ Create your OpenAI API key to enable model access. Step-by-step instructions.|
 
