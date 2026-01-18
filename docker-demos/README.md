@@ -28,7 +28,7 @@ Quick summary:
 2. Sign up or log in
 3. Go to API Keys section
 4. Create a new key and copy it
-5. Add $5-10 in credits (more than enough for this course)
+5. Add $5-10 in credits (more than enough to experiment with these concepts.)
 
 ---
 
