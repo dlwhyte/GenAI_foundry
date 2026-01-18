@@ -21,6 +21,10 @@ Docker is required to run these demos. Download and install it for your operatin
 
 After installation, **start Docker Desktop** and wait for it to fully load (you'll see the whale icon in your system tray/menu bar).
 
+### Get an OpenAI API Key (Optional)
+
+The RAG demo works without an API key. The Ontology demo's AI features require one.
+
 👉 **[See detailed instructions: How to Get an OpenAI API Key](../docs/openai.md)**
 
 Quick summary:
@@ -28,7 +32,7 @@ Quick summary:
 2. Sign up or log in
 3. Go to API Keys section
 4. Create a new key and copy it
-5. Add $5-10 in credits (more than enough to experiment with these concepts.)
+5. Add $5-10 in credits (more than enough to experiment with these concepts)
 
 ---
 
@@ -38,17 +42,18 @@ Quick summary:
 
 **Option A — Using Git (recommended):**
 ```bash
-git clone https://github.com/YOUR_USERNAME/mit-genai-demos.git
-cd mit-genai-demos
+git clone https://github.com/dlwhyte/GenAI_foundry.git
+cd GenAI_foundry/docker-demos
 ```
 
 **Option B — Download ZIP:**
-1. Click the green **Code** button above
-2. Select **Download ZIP**
-3. Extract the ZIP file
-4. Open Terminal/Command Prompt and navigate to the folder:
+1. Go to the main repo: [github.com/dlwhyte/GenAI_foundry](https://github.com/dlwhyte/GenAI_foundry)
+2. Click the green **Code** button
+3. Select **Download ZIP**
+4. Extract the ZIP file
+5. Open Terminal/Command Prompt and navigate to the folder:
    ```bash
-   cd Downloads/mit-genai-demos-main
+   cd Downloads/GenAI_foundry-main/docker-demos
    ```
 
 ### Step 2: Build the Container
@@ -158,7 +163,7 @@ The first time you use the RAG demo, it downloads a ~90MB model. This is normal 
 ## 📁 Project Structure
 
 ```
-mit-genai-demos/
+docker-demos/
 ├── Dockerfile           # Container configuration
 ├── requirements.txt     # Python dependencies
 ├── README.md           # This file
@@ -200,8 +205,6 @@ mit-genai-demos/
 If you encounter issues not covered here, please:
 1. Check that Docker Desktop is running
 2. Try rebuilding: `docker build --no-cache -t mit-genai-demos .`
-3. Contact the course instructor
-
 ---
 
 *Applied Generative AI for Digital Transformation*
