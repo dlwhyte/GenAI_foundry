@@ -10,7 +10,7 @@ Docker is a tool that packages applications into **containers** — self-contain
 
 Think of it like a shipping container: everything is pre-packed, and it works the same way on any ship (computer).
 
-### Why use Docker for this course?
+### Why use Docker for this material?
 
 | Without Docker | With Docker |
 |----------------|-------------|
