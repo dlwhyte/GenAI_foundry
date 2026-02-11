@@ -1,113 +1,86 @@
-# 🐳 Getting Started with Docker
+# 🐳 Docker Guide — GenAI Foundry
 
-A beginner's guide to using Docker for running course demos.
-
----
-
-## What is Docker?
-
-Docker is a tool that packages applications into **containers** — self-contained units that include everything needed to run the app. 
-
-Think of it like a shipping container: everything is pre-packed, and it works the same way on any ship (computer).
-
-### Why use Docker for this material?
-
-| Without Docker | With Docker |
-|----------------|-------------|
-| Install Python | Just install Docker |
-| Install 10+ packages | Run one command |
-| Fix version conflicts | Everything pre-configured |
-| "It works on my machine" problems | Works the same everywhere |
+A step-by-step guide to running the GenAI Foundry demos using Docker. No prior Docker experience needed.
 
 ---
 
-## Step 1: Install Docker Desktop
+## Part 1: What is Docker?
 
-Download and install Docker Desktop for your operating system:
+Think of Docker as a **shipping container for software**. Just like a shipping container holds everything needed for delivery, a Docker container holds everything your app needs to run — Python, libraries, code — all in one neat package.
 
-| Operating System | Download Link | Notes |
-|-----------------|---------------|-------|
-| **Windows 10/11** | [Download](https://docs.docker.com/desktop/install/windows-install/) | Requires WSL 2 (installer will guide you) |
-| **Mac (Intel)** | [Download](https://docs.docker.com/desktop/install/mac-install/) | Choose "Mac with Intel chip" |
-| **Mac (Apple Silicon)** | [Download](https://docs.docker.com/desktop/install/mac-install/) | Choose "Mac with Apple chip" |
-| **Linux** | [Download](https://docs.docker.com/desktop/install/linux-install/) | Ubuntu, Debian, Fedora supported |
+**Why use it?**
 
-### Installation Steps
-
-1. Download the installer for your OS
-2. Run the installer
-3. Follow the prompts (accept defaults)
-4. **Restart your computer** when asked
-5. Open Docker Desktop
-6. Wait for it to start (you'll see "Docker Desktop is running")
-
-### How to Know It's Working
-
-Open Terminal (Mac/Linux) or Command Prompt (Windows) and type:
-
-```bash
-docker --version
-```
-
-You should see something like:
-```
-Docker version 24.0.7, build afdd53b
-```
+| Benefit | What it means |
+|---------|---------------|
+| **Consistent** | Works the same on every computer |
+| **No conflicts** | Won't interfere with your other Python projects |
+| **Easy cleanup** | Remove everything with one command |
+| **One command** | Build once, run anywhere |
 
 ---
 
-## Step 2: Understand the Basic Commands
+## Part 2: Install Docker Desktop
 
-You only need **three commands** for this course:
+Download Docker Desktop for your operating system:
 
-### Build an Image
-```bash
-docker build -t my-app-name .
-```
-- Creates a container image from a Dockerfile
-- `-t my-app-name` gives it a name
-- `.` means "look in the current folder"
-- **Run once** (unless files change)
+| Operating System | Download Link |
+|-----------------|---------------|
+| **Windows** | [Docker Desktop for Windows](https://www.docker.com/products/docker-desktop/) |
+| **Mac (Intel)** | [Docker Desktop for Mac](https://www.docker.com/products/docker-desktop/) |
+| **Mac (Apple Silicon)** | [Docker Desktop for Mac](https://www.docker.com/products/docker-desktop/) |
+| **Linux** | [Docker Desktop for Linux](https://docs.docker.com/desktop/install/linux/) |
 
-### Run a Container
-```bash
-docker run -p 8501:8501 my-app-name
-```
-- Starts the application
-- `-p 8501:8501` connects port 8501 on your computer to the container
-- Run this **every time** you want to use the app
-
-### Stop a Container
-Press `Ctrl+C` in the terminal, or:
-```bash
-docker stop $(docker ps -q)
-```
+After installation:
+1. **Open Docker Desktop**
+2. **Wait** for the whale icon to stop animating (this means it's ready)
+3. **Verify** by opening a terminal and typing: `docker --version`
 
 ---
 
-## Step 3: Run the Course Demos
+## Part 3: Running GenAI Foundry
 
-### Navigate to the Demo Folder
+### Step 1: Get the Code
+
+**Option A: Clone with Git** (recommended)
 ```bash
-cd GenAI_foundry/docker-demos
+git clone https://github.com/dlwhyte/GenAI_foundry.git
+cd GenAI_foundry
 ```
 
-### Build the Container (First Time Only)
+**Option B: Download ZIP**
+1. Go to https://github.com/dlwhyte/GenAI_foundry
+2. Click the green **"Code"** button
+3. Click **"Download ZIP"**
+4. Extract the ZIP file
+5. Open a terminal and navigate to the folder
+
+### Step 2: Build the Docker Image
+
 ```bash
-docker build -t mit-genai-demos .
+docker build -t genai-foundry .
 ```
 
-This takes 2-3 minutes. You'll see lots of output — that's normal.
+- `-t genai-foundry` gives the image a name
+- `.` tells Docker to look in the current folder for the Dockerfile
 
-**What's happening:**
-1. Docker downloads a base Python image
-2. Installs all required packages
-3. Copies the application files
-4. Creates a ready-to-run image
+**This will take 3-5 minutes** the first time (downloading Python, ML libraries, etc.).
 
-### Run the Demos
+Wait until you see:
+```
+Successfully built xxxxxxxxxx
+Successfully tagged genai-foundry:latest
+```
+
+### Step 3: Run the Container
+
+**Without an API key** (RAG Explorer works without one):
 ```bash
-docker run -p 8501:8501 mit-genai-demos
+docker run -p 8501:8501 genai-foundry
+```
+
+**With an OpenAI API key** (needed for Ontology demo + RAG Chat):
+```bash
+docker run -p 8501:8501 -e OPENAI_API_KEY=sk-your-key-here genai-foundry
 ```
 
 You'll see:
@@ -116,178 +89,140 @@ You can now view your Streamlit app in your browser.
 URL: http://0.0.0.0:8501
 ```
 
-### Open in Browser
-Go to: **http://localhost:8501**
+### Step 4: Open the App
 
-### Stop When Done
-Press `Ctrl+C` in the terminal.
+Open your browser and go to: **http://localhost:8501**
 
----
+🎉 **You should see the GenAI Foundry home page with all three demos!**
 
-## Running Again Later
+### Step 5: Stop the App
 
-You only build once. After that:
-
-```bash
-cd GenAI_foundry/docker-demos
-docker run -p 8501:8501 mit-genai-demos
-```
+Press `Ctrl+C` in the terminal to stop the container.
 
 ---
 
-## Visual Guide: What Happens When You Run Docker
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  YOUR COMPUTER                                              │
-│                                                             │
-│   ┌─────────────────────────────────────────────────────┐  │
-│   │  DOCKER CONTAINER                                    │  │
-│   │                                                      │  │
-│   │   Python 3.11                                        │  │
-│   │   + Streamlit                                        │  │
-│   │   + OpenAI library                                   │  │
-│   │   + All other packages                               │  │
-│   │   + Demo application code                            │  │
-│   │                                                      │  │
-│   │   Running on port 8501 ─────────────────────────┐   │  │
-│   │                                                  │   │  │
-│   └──────────────────────────────────────────────────│───┘  │
-│                                                      │      │
-│   Your browser ◄─────────────────────────────────────┘      │
-│   http://localhost:8501                                     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## Common Issues & Solutions
+## Part 4: Common Issues & Solutions
 
 ### "Docker command not found"
-
-**Problem:** Docker isn't installed or Terminal can't find it.
-
-**Solution:**
-- Make sure Docker Desktop is installed
-- Restart your terminal/command prompt
-- On Windows, restart your computer
-
----
+- **Cause:** Docker isn't installed or terminal was opened before installation
+- **Solution:**
+  1. Make sure Docker Desktop is installed
+  2. Close and reopen your terminal
+  3. On Windows, try restarting your computer
 
 ### "Cannot connect to Docker daemon"
-
-**Problem:** Docker Desktop isn't running.
-
-**Solution:**
-1. Look for the whale icon in your system tray (Windows) or menu bar (Mac)
-2. If not there, open Docker Desktop from your applications
-3. Wait for it to fully start (whale icon stops animating)
-
----
+- **Cause:** Docker Desktop isn't running
+- **Solution:**
+  1. Open Docker Desktop application
+  2. Wait for the whale icon to stop animating
+  3. Try the command again
 
 ### "Port 8501 is already in use"
+- **Cause:** Another app (or another container) is using that port
+- **Solution:** Use a different port:
+  ```bash
+  docker run -p 8502:8501 genai-foundry
+  ```
+  Then open `http://localhost:8502` instead
 
-**Problem:** Something else is using that port.
+### "COPY failed: file not found"
+- **Cause:** You're not in the right directory
+- **Solution:** Make sure you `cd` into the folder containing the `Dockerfile`:
+  ```bash
+  cd path/to/GenAI_foundry
+  ls  # Should show Dockerfile, Home.py, etc.
+  ```
 
-**Solutions:**
+### Build is very slow
+- **Cause:** First-time download of Python, ML libraries, and models (~1GB+)
+- **Solution:** This is normal for the first build. Subsequent builds are much faster due to caching.
 
-Option A — Find and stop the other container:
+### App works but looks different than expected
+- **Cause:** Browser cache
+- **Solution:** Hard refresh with `Ctrl + Shift + R` (Windows/Linux) or `Cmd + Shift + R` (Mac)
+
+---
+
+## Part 5: Useful Docker Commands Reference
+
 ```bash
+# See running containers
 docker ps
+
+# See all containers (including stopped)
+docker ps -a
+
+# Stop a container
 docker stop <container_id>
+
+# Remove a container
+docker rm <container_id>
+
+# See all images
+docker images
+
+# Remove an image
+docker rmi genai-foundry
+
+# Rebuild without cache (if you need a fresh build)
+docker build --no-cache -t genai-foundry .
+
+# Run in background (detached mode)
+docker run -d -p 8501:8501 genai-foundry
+
+# View logs of a background container
+docker logs <container_id>
+
+# Stop all running containers
+docker stop $(docker ps -q)
 ```
 
-Option B — Use a different port:
+---
+
+## Part 6: Cleanup
+
+If you want to free up disk space later:
+
 ```bash
-docker run -p 8502:8501 mit-genai-demos
-```
-Then go to `http://localhost:8502`
+# Remove the container (after stopping it)
+docker rm $(docker ps -a -q --filter ancestor=genai-foundry)
 
----
+# Remove the image
+docker rmi genai-foundry
 
-### Build fails with "no space left on device"
-
-**Problem:** Docker's storage is full.
-
-**Solution:**
-```bash
-docker system prune -a
-```
-This removes unused images and containers. Then rebuild.
-
----
-
-### Build fails with memory error
-
-**Problem:** Docker needs more RAM.
-
-**Solution:**
-1. Open Docker Desktop
-2. Go to **Settings** (gear icon)
-3. Select **Resources**
-4. Increase **Memory** to at least 4 GB
-5. Click **Apply & Restart**
-
----
-
-### "Image not found" when running
-
-**Problem:** You haven't built the image yet, or used a different name.
-
-**Solution:**
-Make sure you're in the right folder and build first:
-```bash
-cd GenAI_foundry/docker-demos
-docker build -t mit-genai-demos .
-docker run -p 8501:8501 mit-genai-demos
+# Remove all unused Docker data (careful!)
+docker system prune
 ```
 
 ---
 
-### App runs but shows errors in browser
+## Quick Reference Card
 
-**Solutions:**
-- Refresh the page
-- Check if you entered your API key (for Ontology demo)
-- Check the terminal for error messages
-
----
-
-## Useful Docker Commands
-
-| Command | What it does |
-|---------|--------------|
-| `docker ps` | List running containers |
-| `docker ps -a` | List all containers (including stopped) |
-| `docker images` | List all images |
-| `docker stop $(docker ps -q)` | Stop all running containers |
-| `docker rm $(docker ps -aq)` | Remove all containers |
-| `docker rmi mit-genai-demos` | Remove a specific image |
-| `docker system prune -a` | Clean up unused data |
-| `docker build --no-cache -t name .` | Rebuild from scratch |
+```
+┌─────────────────────────────────────────────────────────┐
+│                    DOCKER QUICK START                    │
+├─────────────────────────────────────────────────────────┤
+│  1. Open terminal                                       │
+│  2. cd GenAI_foundry                                    │
+│  3. docker build -t genai-foundry .                     │
+│  4. docker run -p 8501:8501 genai-foundry               │
+│  5. Open http://localhost:8501                           │
+│  6. Ctrl+C to stop                                      │
+│                                                         │
+│  With API key:                                          │
+│  docker run -p 8501:8501 -e OPENAI_API_KEY=sk-... \     │
+│    genai-foundry                                        │
+└─────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## Glossary
+## Need More Help?
 
-| Term | Meaning |
-|------|---------|
-| **Image** | A template/blueprint for containers (like a recipe) |
-| **Container** | A running instance of an image (like the cooked meal) |
-| **Dockerfile** | Instructions for building an image |
-| **Port** | A network endpoint (like a door number) |
-| **Volume** | Shared storage between container and your computer |
-| **Docker Desktop** | The application that runs Docker on your computer |
+- **Docker Documentation:** https://docs.docker.com/get-started/
+- **Streamlit Documentation:** https://docs.streamlit.io/
+- **Course Discussion Forum:** Post your question with any error messages
 
 ---
 
-## Want to Learn More?
-
-- [Docker's Official Getting Started Guide](https://docs.docker.com/get-started/)
-- [Docker in 100 Seconds (Video)](https://www.youtube.com/watch?v=Gjnup-PuquQ)
-- [Docker Tutorial for Beginners](https://www.youtube.com/watch?v=fqMOX6JJhGo)
-
----
-
-*MIT Professional Education — Applied Generative AI for Digital Transformation*
+*MIT Professional Education: Applied Generative AI for Digital Transformation*

@@ -1,6 +1,7 @@
-# Applied Generative AI Demos
-# Build: docker build -t mit-genai-demos .
-# Run:   docker run -p 8501:8501 mit-genai-demos
+# GenAI Foundry — Applied Generative AI Demos
+# Build: docker build -t genai-foundry .
+# Run:   docker run -p 8501:8501 genai-foundry
+# With API key: docker run -p 8501:8501 -e OPENAI_API_KEY=sk-your-key genai-foundry
 
 FROM python:3.11-slim
 
@@ -16,7 +17,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application files
-COPY . .
+COPY Home.py .
+COPY pages/ pages/
+COPY estel/ estel/
 
 # Expose Streamlit port
 EXPOSE 8501
