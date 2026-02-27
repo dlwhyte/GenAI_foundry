@@ -82,7 +82,7 @@ A complete document-grounded chat assistant powered by RAG:
 
 ### 🐳 Running the Demos (Docker Required)
 
-📖 **[Detailed Docker Guide for Beginners](docs/DOCKER_GUIDE.md)**
+📖 **[Detailed Docker Guide for Beginners](docs/docker_guide.md)**
 
 | Step | Command |
 |:-----|:--------|
