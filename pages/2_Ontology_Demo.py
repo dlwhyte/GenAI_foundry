@@ -3,6 +3,7 @@ Ontology & Counterfactual Reasoning Demo - Streamlit Page
 Demonstrates structured knowledge and "what if" analysis
 """
 
+import os
 import streamlit as st
 import plotly.graph_objects as go
 from openai import OpenAI
@@ -528,7 +529,7 @@ st.title("🧠 Ontology & Counterfactual Reasoning")
 st.markdown("*Exploring structured knowledge and 'what if' analysis for risk assessment*")
 
 # Get API key from session state (set in Home.py)
-api_key = st.session_state.get('openai_api_key', '')
+api_key = st.session_state.get('openai_api_key', '') or os.environ.get('OPENAI_API_KEY', '')
 
 # Sidebar
 with st.sidebar:
@@ -544,9 +545,24 @@ with st.sidebar:
     - Red = Threat targets Asset
     - Green = Control mitigates Threat
     """)
-    
+
+    st.markdown("---")
+    st.header("⚙️ Configuration")
     if not api_key:
-        st.warning("⚠️ Enter API key on Home page for AI features")
+        sidebar_key = st.text_input(
+            "OpenAI API Key",
+            type="password",
+            help="Required for AI analysis features",
+            key="ontology_api_key"
+        )
+        if sidebar_key:
+            api_key = sidebar_key
+            os.environ["OPENAI_API_KEY"] = sidebar_key
+            st.success("✅ API key set")
+        else:
+            st.warning("⚠️ API key required for AI features")
+    else:
+        st.success("✅ API key set")
 
 # Main tabs
 tab1, tab2, tab3, tab4 = st.tabs(["📊 Ontology Explorer", "🔮 Counterfactual Analysis", "✅ LLM Validation", "📚 Concepts"])
