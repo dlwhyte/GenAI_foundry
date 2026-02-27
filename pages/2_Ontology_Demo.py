@@ -528,7 +528,7 @@ st.title("🧠 Ontology & Counterfactual Reasoning")
 st.markdown("*Exploring structured knowledge and 'what if' analysis for risk assessment*")
 
 # Get API key from session state (set in Home.py)
-api_key = st.session_state.get('openai_api_key', '')
+api_key = st.session_state.get('openai_api_key', '') or os.environ.get('OPENAI_API_KEY', '')
 
 # Sidebar
 with st.sidebar:
