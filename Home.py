@@ -1,18 +1,19 @@
 """
-Applied Generative AI - Interactive Demos
-MIT Professional Education: Applied Generative AI for Digital Transformation
+Applied Generative AI — Interactive Demos
+Speed of Learning: GenAI Foundry
 """
 
 import streamlit as st
+import os
 
 st.set_page_config(
     page_title="GenAI Foundry",
-    page_icon="🎓",
+    page_icon="🚀",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS — matching AgenticAI Foundry design system
+# Custom CSS — matching existing design system
 st.markdown("""
 <style>
     .main-header {
@@ -24,90 +25,114 @@ st.markdown("""
     .sub-header {
         font-size: 1.2rem;
         color: #666;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .highlight-box {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
+        background: linear-gradient(135deg, #f0f4ff 0%, #e8f4fd 100%);
+        border-left: 5px solid #1E3A5F;
         padding: 1.5rem;
-        border-radius: 10px;
-        margin: 1rem 0;
+        border-radius: 0 10px 10px 0;
+        margin-bottom: 1.5rem;
     }
     .stat-number {
         font-size: 2.5rem;
-        font-weight: bold;
-        color: #0066cc;
+        font-weight: 700;
+        color: #1E3A5F;
+        margin: 0;
     }
     .card {
-        background-color: #f8f9fa;
+        background: white;
+        border: 1px solid #e0e0e0;
         border-radius: 10px;
-        padding: 1.5rem;
-        margin-bottom: 1rem;
-        border-left: 4px solid #0066cc;
+        padding: 1.2rem;
+        height: 100%;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        transition: box-shadow 0.2s;
+    }
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .card h4 { color: #1E3A5F; margin-top: 0; }
+    .card ul { color: #444; padding-left: 1.2rem; }
+    .card li { margin-bottom: 0.3rem; }
+    .module-badge {
+        display: inline-block;
+        background: #1E3A5F;
+        color: white;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .module-badge.danger {
+        background: #c0392b;
+    }
+    .section-divider {
+        border: none;
+        border-top: 2px solid #e0e0e0;
+        margin: 2rem 0 1.5rem 0;
+    }
+    .section-label {
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #8b949e;
+        margin-bottom: 0.5rem;
     }
 </style>
 """, unsafe_allow_html=True)
 
-# API key handling — check env var first, then allow sidebar entry
-import os
-env_key = os.environ.get("OPENAI_API_KEY", "")
-
+# ── Sidebar API key ───────────────────────────────────────────────────────────
 with st.sidebar:
-    st.header("⚙️ Configuration")
-    if env_key:
-        st.success("✅ API key set via environment")
+    st.markdown("### 🔑 OpenAI API Key")
+    api_key = st.text_input("Enter your API key", type="password", placeholder="sk-...")
+    if api_key:
+        os.environ["OPENAI_API_KEY"] = api_key
+        st.success("✅ API key set")
     else:
-        api_key = st.text_input(
-            "OpenAI API Key",
-            type="password",
-            help="Required for Ontology demo AI features and RAG Chat",
-            key="openai_api_key"
-        )
-        if api_key:
-            os.environ["OPENAI_API_KEY"] = api_key
-            st.success("✅ API key set")
-        else:
-            st.info("💡 Tip: Run with `-e OPENAI_API_KEY=sk-...` or enter key here")
+        st.info("💡 Tip: Run with `-e OPENAI_API_KEY=sk-...` or enter key here")
 
-    st.markdown("---")
-    st.caption("Select a demo from the sidebar navigation ☝️")
+st.markdown("---")
+st.caption("Select a demo from the sidebar navigation 👈")
 
-# Header
-st.markdown('<p class="main-header">🎓 GenAI Foundry</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">Applied Generative AI for Digital Transformation — Interactive Demos</p>', unsafe_allow_html=True)
+# ── Header ────────────────────────────────────────────────────────────────────
+st.markdown('<p class="main-header">🚀 GenAI Foundry</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-header">Speed of Learning — Interactive Demos</p>', unsafe_allow_html=True)
 
-# Key insight box
+# ── Key insight box ───────────────────────────────────────────────────────────
 st.markdown("""
 <div class="highlight-box">
-<h3>🎯 The Learning Journey</h3>
+<h3>🗺️ The Learning Journey</h3>
 <p style="font-size: 1.3rem; margin-bottom: 0;">
-<strong>From raw text to intelligent retrieval</strong> — see how chunking, embeddings, ontologies,
-and document-grounded chat work under the hood.
+<strong>From raw text to intelligent retrieval — and knowing when to trust it.</strong>
 </p>
 <p style="margin-top: 0.5rem;">
 These demos make abstract GenAI concepts tangible through hands-on exploration.
+As you progress through the modules, you'll go from understanding how LLMs work,
+to building with them, to critically evaluating their risks.
 </p>
 </div>
 """, unsafe_allow_html=True)
 
-# Stats row
+# ── Stats row ─────────────────────────────────────────────────────────────────
 st.markdown("### 📊 What's Inside")
 
 col1, col2, col3 = st.columns(3)
-
 with col1:
     st.markdown("""
     <div style="text-align: center; padding: 1rem; background: #f0f7ff; border-radius: 10px;">
-    <p class="stat-number">3</p>
-    <p><strong>Interactive Demos</strong><br/>RAG Explorer, Ontology Reasoning, and Document Chat</p>
+    <p class="stat-number">4</p>
+    <p><strong>Interactive Demos</strong><br/>RAG Explorer, Ontology Reasoning, Document Chat, and Prompt Injection</p>
     </div>
     """, unsafe_allow_html=True)
 
 with col2:
     st.markdown("""
     <div style="text-align: center; padding: 1rem; background: #f0f7ff; border-radius: 10px;">
-    <p class="stat-number">5</p>
-    <p><strong>Core Concepts</strong><br/>Chunking, Embeddings, Vector Search, Ontologies, RAG Pipelines</p>
+    <p class="stat-number">6</p>
+    <p><strong>Core Concepts</strong><br/>Chunking, Embeddings, Vector Search, Ontologies, RAG Pipeline, AI Safety</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -115,19 +140,21 @@ with col3:
     st.markdown("""
     <div style="text-align: center; padding: 1rem; background: #f0f7ff; border-radius: 10px;">
     <p class="stat-number">0</p>
-    <p><strong>Setup Required</strong><br/>RAG Explorer runs with no API key — just click and learn</p>
+    <p><strong>Setup Required</strong><br/>RAG Explorer and Prompt Injection run with no API key — just click and learn</p>
     </div>
     """, unsafe_allow_html=True)
 
-# Demo cards
+# ── Demo cards — Modules 1–5 ──────────────────────────────────────────────────
 st.markdown("---")
-st.markdown("### 🧪 Explore the Demos")
+st.markdown('<div class="section-label">📚 Modules 1–5 — How GenAI Works</div>', unsafe_allow_html=True)
+st.markdown("### 🔍 Explore the Demos")
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("""
     <div class="card">
+    <span class="module-badge">Modules 1–3</span>
     <h4>🔍 RAG Visual Explorer</h4>
     <ul>
     <li>See how documents are split into chunks</li>
@@ -143,6 +170,7 @@ with col1:
 with col2:
     st.markdown("""
     <div class="card">
+    <span class="module-badge">Module 4</span>
     <h4>🧠 Ontology & Counterfactuals</h4>
     <ul>
     <li>Explore interactive cybersecurity knowledge graphs</li>
@@ -158,6 +186,7 @@ with col2:
 with col3:
     st.markdown("""
     <div class="card">
+    <span class="module-badge">Module 5</span>
     <h4>🤖 RAG Chat with Estel</h4>
     <ul>
     <li>Upload your own PDF or TXT documents</li>
@@ -170,22 +199,90 @@ with col3:
     """, unsafe_allow_html=True)
     st.page_link("pages/3_RAG_Chat.py", label="Open RAG Chat →", icon="🤖")
 
-# Quick start
-st.markdown("---")
-st.markdown("### 🚀 Quick Start")
-st.info("""
-👈 **Select a demo from the sidebar** to begin exploring.
+# ── Module 6 — Devious LLMs ───────────────────────────────────────────────────
+st.markdown('<hr class="section-divider">', unsafe_allow_html=True)
+st.markdown('<div class="section-label">⚠️ Module 6 — Devious LLMs</div>', unsafe_allow_html=True)
+st.markdown("### 🪤 When LLMs Go Wrong")
 
-1. **RAG Explorer** — No setup needed, just click and learn
-2. **Ontology Demo** — Enter your OpenAI API key in the sidebar first
-3. **RAG Chat** — Enter your API key, upload documents, and start chatting
-""")
+st.markdown("""
+<div class="highlight-box" style="border-left-color: #c0392b; background: linear-gradient(135deg, #fff5f5 0%, #fff0f0 100%);">
+<h4 style="color: #c0392b; margin-top: 0;">You understand how LLMs work. Now see how they can be exploited.</h4>
+<p>
+You've learned how prompts, embeddings, RAG, and agents function.
+But what happens when an attacker controls what text the model sees?
+Module 6 explores <strong>Devious LLMs</strong> — the ways AI systems can be manipulated,
+deceived, or turned against the users they're meant to serve.
+</p>
+</div>
+""", unsafe_allow_html=True)
 
-# Footer
+col4, col5, col6 = st.columns(3)
+
+with col4:
+    st.markdown("""
+    <div class="card">
+    <span class="module-badge danger">Module 6 — New</span>
+    <h4>🪤 Prompt Injection Playground</h4>
+    <ul>
+    <li>Watch hidden instructions hijack AI agents</li>
+    <li>Three real-world attack scenarios</li>
+    <li>See guardrails block each attack live</li>
+    <li>Understand defence principles</li>
+    </ul>
+    <p><em>No API key required</em></p>
+    </div>
+    """, unsafe_allow_html=True)
+    st.page_link("pages/4_Prompt_Injection.py", label="Open Playground →", icon="🪤")
+
+with col5:
+    st.markdown("""
+    <div class="card" style="background: #fafafa; border: 1px dashed #ccc;">
+    <span class="module-badge" style="background:#aaa;">Module 6 — Coming Soon</span>
+    <h4 style="color:#aaa;">🎭 Sycophancy Detector</h4>
+    <ul style="color:#aaa;">
+    <li>See how models tell users what they want to hear</li>
+    <li>Compare neutral vs. leading questions</li>
+    <li>Understand confirmation bias in LLMs</li>
+    </ul>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col6:
+    st.markdown("""
+    <div class="card" style="background: #fafafa; border: 1px dashed #ccc;">
+    <span class="module-badge" style="background:#aaa;">Module 6 — Coming Soon</span>
+    <h4 style="color:#aaa;">😴 Sleeper Agent Simulator</h4>
+    <ul style="color:#aaa;">
+    <li>Explore deceptive alignment concepts</li>
+    <li>See how models behave differently in testing vs. production</li>
+    <li>Based on Anthropic safety research</li>
+    </ul>
+    </div>
+    """, unsafe_allow_html=True)
+
+# ── Quick start ───────────────────────────────────────────────────────────────
 st.markdown("---")
 st.markdown("""
-<div style="text-align: center; color: #666; font-size: 0.9rem;">
-<p>MIT Professional Education: Applied Generative AI for Digital Transformation</p>
-<p>Interactive Demo Hub | <a href="https://github.com/dlwhyte/GenAI_foundry" target="_blank">GitHub Repository</a></p>
+### 🚀 Quick Start
+
+```bash
+# Clone and run locally
+git clone https://github.com/dlwhyte/GenAI_foundry.git
+cd GenAI_foundry
+pip install -r requirements.txt
+streamlit run Home.py
+```
+
+Or run with Docker:
+```bash
+docker build -t genai-foundry .
+docker run -p 8501:8501 genai-foundry
+```
+""")
+
+st.markdown("---")
+st.markdown("""
+<div style="text-align:center; color:#6c757d; font-size:0.85rem;">
+Speed of Learning | GenAI Foundry | MIT Professional Education
 </div>
 """, unsafe_allow_html=True)
