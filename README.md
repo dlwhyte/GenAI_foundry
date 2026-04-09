@@ -27,9 +27,9 @@ Feel free to **fork**, **adapt**, and **expand** these examples! 🎯
 Follow this sequence for the best experience:
 
 ```
-① Tokens & Embeddings → ② Semantic Similarity → ③ Simple Chatbot
-→ ④ Temperature & Tokens → ⑤ Prompt Engineering → ⑥ Few-Shot / Zero-Shot
-→ ⑦ Simple RAG → ⑧ LangChain Basics → ⑨ What is an Agent?
+① Tokens & Embeddings → ② Semantic Similarity → ③ Search with Embeddings → ④ Model Tradeoffs
+→ ⑤ Simple Chatbot → ⑥ Temperature & Tokens → ⑦ Prompt Engineering → ⑧ Few-Shot / Zero-Shot
+→ ⑨ Simple RAG → ⑩ LangChain Basics → ⑪ What is an Agent?
 → 🎓 Interactive Demos (Streamlit) → 🚀 AgenticAI Foundry
 ```
 
@@ -47,8 +47,8 @@ Welcome to the GenAI Foundry learning series! All notebooks can be opened direct
 |---|---|---|---|---|
 | 1 | Tokens and Embeddings | How LLMs break text into tokens and represent meaning as vectors | ✅ Free | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dlwhyte/GenAI_foundry/blob/main/notebooks/tokens_and_embeddings.ipynb) |
 | 2 | Semantic Similarity | How embeddings capture meaning and measure similarity between text | ✅ Free | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dlwhyte/GenAI_foundry/blob/main/notebooks/semantic_similarity.ipynb) |
-| 3 | Search with Embeddings | Using embeddings for semantic search — the foundation of RAG | ✅ Free | 🚧 Coming Soon |
-| 4 | Model Selection & Tradeoffs | How to choose the right model for speed, cost, and quality | ✅ Free | 🚧 Coming Soon |
+| 3 | Search with Embeddings | Keyword vs. semantic search, chunking, and the foundations of RAG | ✅ Free | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dlwhyte/GenAI_foundry/blob/main/notebooks/search_with_embeddings.ipynb) |
+| 4 | Model Selection & Tradeoffs | Capability, speed, cost, and context — how to choose the right model | ✅ Free | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dlwhyte/GenAI_foundry/blob/main/notebooks/model_selection_tradeoffs.ipynb) |
 
 ### Part 2: Introductory Concepts (OpenAI API Key Required)
 
@@ -77,7 +77,7 @@ These demos let you **see the concepts from the notebooks in action** — no cod
 > 📌 **Notebooks → Demos connection:** The RAG Visual Explorer (below) visualises exactly what happens in notebooks 3 and 9. The RAG Chat demo is the production version of what you build in notebook 9.
 
 ### 🔍 RAG Visual Explorer — No API key required
-*Connects to: Notebooks 1, 2, 9*
+*Connects to: Notebooks 1, 2, 3, 9*
 
 See how Retrieval-Augmented Generation works under the hood:
 - **Chunking** — Watch documents split into searchable pieces
