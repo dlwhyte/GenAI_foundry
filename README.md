@@ -102,13 +102,13 @@ A complete document-grounded chat assistant powered by RAG:
 - **Chat** — Ask questions and get answers grounded in your uploaded content
 - **Learn** — See RAG in action as a complete end-to-end pipeline
 
-📖 [How RAG Chat Works — Deep Dive Guide](docs/)
+📖 [How RAG Chat Works — Deep Dive Guide](docs/RAG_CHAT_GUIDE.md)
 
 ---
 
 ## 🐳 Running the Demos (Docker Required)
 
-📖 [Detailed Docker Guide for Beginners](docs/)
+📖 [Detailed Docker Guide for Beginners](docs/docker_guide.md)
 
 | Step | Command |
 |---|---|
@@ -141,7 +141,7 @@ docker run -p 8501:8501 -e OPENAI_API_KEY=sk-your-key-here genai-foundry
 | Action | Description |
 |---|---|
 | ✅ New to GitHub? | [Start here](https://docs.github.com/en/get-started) |
-| ✅ Docker setup | [Learn how to install and use Docker for running demos](docs/) |
+| ✅ Docker setup | [Learn how to install and use Docker for running demos](docs/docker_guide.md) |
 | ✅ Open notebooks | Open and run the notebooks directly in Google Colab — click any badge above |
 | ✅ Get an API key | [Create your OpenAI API key to enable model access](https://platform.openai.com/api-keys) |
 
