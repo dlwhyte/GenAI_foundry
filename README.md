@@ -60,7 +60,7 @@ Welcome to the GenAI Foundry learning series! All notebooks can be opened direct
 | 8 | Few-Shot / Zero-Shot Prompting | Teaching the model with examples vs. instructions alone | 🔑 Required | ~20 min | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dlwhyte/GenAI_foundry/blob/main/notebooks/few_shot_zero_shot.ipynb) |
 | 9 | Simple RAG Application | Retrieval-Augmented Generation end-to-end | 🔑 Required | ~30 min | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dlwhyte/GenAI_foundry/blob/main/notebooks/simple_rag.ipynb) |
 | 10 | LangChain Basics | Chains, prompts, and memory with LangChain | 🔑 Required | ~25 min | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dlwhyte/GenAI_foundry/blob/main/notebooks/langchain_introduction.ipynb) |
-| 11 | Fine-Tuning Basics | Intro to fine-tuning foundation models | 🔑 Required | ~30 min | 🚧 Coming Soon |
+| 11 | Fine-Tuning Basics | Intro to fine-tuning foundation models | 🔑 Required | ~30 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dlwhyte/GenAI_foundry/blob/main/notebooks/fine_tuning_basics.ipynb) |
 
 ### Part 3: Bridge to Agentic AI
 
