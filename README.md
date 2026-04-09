@@ -126,3 +126,22 @@ See the [LICENSE](LICENSE) file for more details.
 ---
 
 [![Contact Me](https://img.shields.io/badge/Contact_Me-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dlwhyte/)
+
+
+---
+
+## 🚀 Ready for the Next Level?
+
+This repo covers the **foundations** of Generative AI — how LLMs work, how to prompt them, and how to build RAG pipelines.
+
+When you're ready to build AI systems that take action in the world, continue to the companion course:
+
+### 👉 [AgenticAI Foundry](https://github.com/dlwhyte/AgenticAI_foundry) — Multi-agent systems, tool use, MCP, and agent security
+
+| GenAI Foundry covers... | AgenticAI Foundry covers... |
+|---|---|
+| Tokens, embeddings, and how LLMs work | How agents observe, think, and act |
+| Prompt engineering and few-shot learning | Multi-agent orchestration with CrewAI |
+| RAG pipelines and vector search | Connecting agents to real tools via MCP |
+| LangChain basics | Agent security and prompt injection defense |
+| _Recommended first_ ✅ | _Take after GenAI Foundry_ ➡️ |
