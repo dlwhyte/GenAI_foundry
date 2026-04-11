@@ -21,6 +21,13 @@ Our mission:
 Feel free to **fork**, **adapt**, and **expand** these examples! 🎯
 
 ---
+## 📥 New Here? Start With This ⬇️
+
+**[Download the Student Quick Start Guide (PDF)](Student_Quick_Start.pdf)**
+
+The Quick Start Guide walks you through everything with screenshots — how to get the code, which setup path to choose, and what you should see when it's working. Download this before doing anything else.
+
+---
 
 ## 🗺️ Learning Path
 
