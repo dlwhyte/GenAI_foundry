@@ -205,7 +205,7 @@ def notebooks_page(W, M):
         [p('10'), p('LangChain Basics'),         p('Chains, prompt templates, and memory using the LangChain framework'), p('~25 min')],
         [p('11'), p('Fine-Tuning Basics'),       p('Prepare datasets and fine-tune foundation models on custom data'), p('~30 min')],
     ]
-    elems.append(tbl(part2_data, [0.3*inch, 1.6*inch, 3.2*inch, 0.9*inch]))
+    elems.append(tbl(part2_data, [0.4*inch, 1.6*inch, 3.1*inch, 0.9*inch]))
     elems.append(sp(8))
 
     elems.append(p('Part 3 — Bridge to Agentic AI (Free)', H3))
@@ -214,9 +214,8 @@ def notebooks_page(W, M):
         [h('#'), h('Notebook'), h('What You Will Learn'), h('Time')],
         [p('12'), p('What is an Agent?'), p('The Observe-Think-Act loop: how agents differ from chatbots and RAG'), p('~20 min')],
     ]
-    elems.append(tbl(part3_data, [0.3*inch, 1.6*inch, 3.2*inch, 0.9*inch]))
+    elems.append(tbl(part3_data, [0.4*inch, 1.6*inch, 3.1*inch, 0.9*inch]))
     elems.append(sp(8))
-
     elems.append(p('Getting an OpenAI API Key', H3))
     elems.append(sp(4))
     api_data = [
