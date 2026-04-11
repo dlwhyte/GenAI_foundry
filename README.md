@@ -140,6 +140,7 @@ docker run -p 8501:8501 -e OPENAI_API_KEY=sk-your-key-here genai-foundry
 
 | Action | Description |
 |---|---|
+| 📥 New here? | [Download the Student Quick Start Guide (PDF)](Student_Quick_Start.pdf) |
 | ✅ New to GitHub? | [Start here](https://docs.github.com/en/get-started) |
 | ✅ Docker setup | [Learn how to install and use Docker for running demos](docs/docker_guide.md) |
 | ✅ Open notebooks | Open and run the notebooks directly in Google Colab — click any badge above |
